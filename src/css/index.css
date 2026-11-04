@@ -1,0 +1,131 @@
+.funcionamento .passos .passo img, .busca form input, .botoes a {
+    border-radius: 10px;
+}
+
+/* ///////////// */
+/* Primeira Área */
+/* ///////////// */
+
+.main {
+    width: 90%;
+    padding: 64px 32px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.main::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.busca {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.busca h1 {
+    padding-bottom: 60px;
+}
+
+.busca h1 > .linha {
+    display: block;
+    font-size: 50px;
+}
+
+.busca h1 > .destaque {
+    color: var(--cor-texto-secundario);
+}
+
+.busca form {
+    padding-bottom: 30px;
+}
+
+.busca form input, .botoes a {
+    padding: 10px 5px;
+    border: 3px solid var(--cor-borda);
+    background-color: var(--cor-cards-superficie);
+}
+
+.busca form #pesquisa {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.busca form .enviar {
+    border-color: var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-cards-superficie);
+    font-weight: 700;
+}
+
+.botoes a {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin: 20px 10px 0 0;
+}
+
+.botoes a img {
+    max-width: 30px;
+}
+
+.botoes a p {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+figure {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 50px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+/* //////////// */
+/* Segunda área */
+/* //////////// */
+
+.funcionamento {
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.funcionamento .passos {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.funcionamento .passos img {
+    width: 100px;
+}
+
+.funcionamento .passos h2 {
+    margin: 20px 0 70px;
+}
+
+.funcionamento .passos .passo {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.funcionamento .passos .passo h3 {
+    margin: 20px 0;
+}
+
+.funcionamento .passos .passo p {
+    width: 75%;
+    margin: 0 auto;
+}

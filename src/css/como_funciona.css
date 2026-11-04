@@ -1,0 +1,192 @@
+.section1 figure img, .section2 .passos .passo, .section3 {
+    border-radius: 15px;
+}
+
+.section1::after, .section2 .passos::after, .section3 .dicas::after, .faq .duvida::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+/* //////////////////// */
+/* Containter Principal */
+/* //////////////////// */
+
+.section1 {
+    width: 90%;
+    margin: 64px auto;
+    text-align: justify;
+}
+
+.section1 div {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle; /* Alinha verticalmente pelo meio */
+}
+
+.section1 > div > h1 {
+    margin-bottom:  10px;
+}
+
+.section1 > div > p {
+    margin-top: 10px;
+    text-indent: 32px;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+figure img {
+    max-width: 500px;
+}
+
+
+/* ******** */
+/* Section2 */
+/* ******** */
+
+.section2 {
+    width: 100%;
+}
+
+.section2 h2 {
+    margin: 20px 0 70px 67px;
+}
+
+.section2 .passos {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.section2 .passos .passo {
+    background-color: var(--cor-cards-superficie);
+    width: 19%;
+    height: 327px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 70px;
+}
+
+.section2 .passos .passo .numero {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 30px;
+    color: white;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.section2 .passos .passo h3, .section2 .passos .passo p {
+    text-align: left;
+}
+
+.section2 .passos .passo h3 {
+    margin: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section2 .passos .passo p {
+    margin: 0 30px 30px;
+}
+
+
+/* ******** */
+/* Section3 */
+/* ******** */
+
+
+.section3 {
+    width: 90%;
+    margin: 20px auto 70px;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.section3 h2 {
+    padding: 50px;
+}
+
+.section3 .dicas {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.section3 .dicas .dica {
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+}
+
+.section3 .dicas .dica img {
+    border-radius: 50%;
+    margin: 20px 0;
+    width: 50px;
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria-claro);
+    padding: 10px;
+}
+
+.section3 .dicas .dica h3, .section3 .dicas .dica p {
+    text-align: left;
+}
+
+.section3 .dicas .dica h3 {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section3 .dicas .dica p {
+    margin-bottom: 30px;
+}
+
+/* *** */
+/* FAQ */
+/* *** */
+
+.faq {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.faq h2 {
+    margin-bottom: 70px;
+}
+
+.faq .duvida {
+    border-bottom: 2px solid var(--cor-borda);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.faq .duvida .text-duvida {
+    display: inline-block;
+}
+
+.faq .duvida .text-duvida, .faq .duvida button {
+    font-size: 18px;
+}
+
+.faq .duvida button {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    background-color: var(--cor-fundo-principal);
+    border: 0;
+}
+
+.faq .duvida .resolucao-duvida {
+    text-indent: 20px;
+    color: var(--cor-texto-secundario);
+}

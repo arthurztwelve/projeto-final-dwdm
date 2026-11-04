@@ -1,0 +1,167 @@
+#principal > div, .dynamic-tabs {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* **************** */
+/* Título Principal */
+/* **************** */
+
+.comeco {
+    padding: 30px;
+}
+
+/* ********* */
+/* Navegação */
+/* ********* */
+
+.nav-tabs, .nav-tabs>li>a {
+    color: var(--cor-texto-principal);
+}
+
+.nav-tabs>li.active>a:focus, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover {
+    background-color: var(--cor-fundo-principal);
+    border: none;
+    border-bottom: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+/* **** */
+/* Card */
+/* **** */
+
+.card {
+    background-color: var(--cor-cards-superficie);
+    margin: 20px 0;
+    border: 1px solid var(--cor-borda);
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.card::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.card .esquerda {
+    width:60%;
+}
+
+.card .esquerda, .card .direita {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card .esquerda img, .card .esquerda div, .tipo-solicitacao {
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .esquerda .tipo-solicitacao {
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: 20%;
+}
+
+.agendada, .concluida {
+    border-color: var(--cor-primaria);
+    background-color: var(--cor-primaria-claro);
+    color: var(--cor-primaria);
+}
+
+.analise {
+    border-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria-claro);
+    color: var(--cor-secundaria);
+}
+
+.aguardando {
+    border-color: var(--cor-terciaria);
+    background-color: var(--cor-terciaria-claro);
+    color: var(--cor-terciaria);
+}
+
+.card .esquerda img {
+    border-radius: 50%;
+    max-width: 15%;
+}
+
+.card .esquerda .moveis {
+    border: 1px solid var(--cor-secundaria-hover);
+    background-color: var(--cor-secundaria-claro);
+    padding: 10px;
+}
+
+.card .esquerda .brinquedo {
+    border: 1px solid #ff0000;
+    background-color: #f0dede;
+    padding: 10px;
+}
+
+.card .esquerda .alimento {
+    border: 1px solid var(--cor-terciaria);
+    background-color: var(--cor-terciaria-claro);
+    padding: 10px;
+}
+
+.card .esquerda .roupa {
+    border: 1px solid var(--cor-texto-secundario);
+    background-color: var(--cor-texto-claro);
+    padding: 10px;
+}
+
+.card .esquerda div {
+    max-width: 60%;
+}
+
+.card .esquerda div p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card .esquerda div h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card .direita {
+    width: 39%;
+    border-left: 1px solid var(--cor-borda);
+}
+
+.card .direita .info, .card .direita a {
+    margin: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info {
+    width: 35%;
+}
+
+.info p {
+    font-size: 14px;
+}
+
+.info p:first-of-type {
+    color: var(--cor-texto-secundario);
+}
+
+.card .direita a {
+    width: 50%;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.card .direita a:hover {
+    background-color: var(--cor-primaria-claro);
+}

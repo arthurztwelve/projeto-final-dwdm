@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Solidário - Agendar Coleta</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+
+    <!-- **************************** -->
+    <!-- ********* CABEÇALHO ******** -->
+    <!-- **************************** -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Imagem com a logo do site Mapa Solidário." class="logo-mapa-solidario">
+        </a>
+
+        <div class="itens">
+        
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="como_funciona.html">Como Funciona</a></li>
+                    <li><a href="pagina2.html">Mapa</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="minhas_solicitacoes.html">Minhas Solicitações</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="entrar">
+                <a href="pagina7.html">Entrar</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- **************************** -->
+    <!-- ********* CABEÇALHO ******** -->
+    <!-- **************************** -->
+
+    <section id="principal">
+
+        <h1 class="titulo-pagina">Agendar retirada com Asilo São José</h1>
+
+        <!-- Indicador de Etapas -->
+        <div class="passos arredondado">
+            <span class="passo ativo">1. Preencha seus dados</span>
+            <span class="passo-seta">→</span>
+            <span class="passo">2. Confirme as informações</span>
+            <span class="passo-seta">→</span>
+            <span class="passo">3. Envio</span>
+        </div>
+
+        <form action="#" method="post" class="form-agendamento">
+
+            <div class="duas-colunas">
+                <section class="coluna-esquerda">
+                    <!-- Seus Dados -->
+                    <section class="cartao arredondado">
+                        <h2>Seus dados</h2>
+                        <div class="campo">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="telefone">Telefone (WhatsApp)</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                    </section>
+
+                    <!-- Endereço -->
+                    <section class="cartao arredondado">
+                        <h2>Endereço de retirada</h2>
+                        <div class="campo">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" name="rua" required>
+                        </div>
+                        <div class="linha">
+                            <div class="metade">
+                                <label for="numero">Número</label>
+                                <input type="number" id="numero" name="numero" required min="1" max="999">
+                            </div>
+                            <div class="metade">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" id="bairro" name="bairro" required>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="metade">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="8">
+                            </div>
+                            <div class="metade">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" name="cidade" required>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select id="estado" name="estado" required>
+                                <option value="" disabled selected hidden>Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+
+                    </section>
+
+                    <!-- Doação -->
+                    <section class="cartao arredondado">
+                        <h2>O que você vai doar?</h2>
+                        <div class="campo">
+                            <label for="descricao">Descreva os itens e a quantidade aproximada.</label>
+                            <textarea id="descricao" name="descricao" rows="5" required
+                                placeholder="Ex: 5 camisas, 3 calças..."></textarea>
+                        </div>
+                    </section>
+
+                    <section class="cartao arredondado">
+                        <div class="campo">
+                            <label for="quantidade">Quantidade aproximada de caixas/sacos</label>
+                            <select id="quantidade" name="quantidade" required>
+                                <option value="">Selecione</option>
+                                <option value="1">1 caixa/saco</option>
+                                <option value="2">2 caixas/sacos</option>
+                                <option value="3">3 caixas/sacos</option>
+                                <option value="4">4 caixas/sacos</option>
+                                <option value="5">5 caixas/sacos</option>
+                                <option value="6">6+ caixas/sacos</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="cartao arredondado">
+                        <h2>Quando podemos retirar?</h2>
+                        <span>Período preferencial:</span>
+                        <div class="opcoes-radio">
+                            <label class="radio-item arredondado">
+                                <input type="radio" name="periodo" required>
+                                <span><span class="negrito">Manhã</span><br>8h - 12h</span>
+                            </label>
+                            <label class="radio-item arredondado">
+                                <input type="radio" name="periodo">
+                                <span><span class="negrito">Tarde</span><br>12h - 18h</span>
+                            </label>
+                            <label class="radio-item arredondado">
+                                <input type="radio" name="periodo">
+                                <span><span class="negrito">Sábado</span><br>8h - 12h</span>
+                            </label>
+                        </div>
+                    </section>
+
+                    <div class="botoes">
+                        <button type="reset" class="botao cancelar arredondado">Cancelar</button>
+                        <button type="submit" class="botao enviar arredondado">Continuar</button>
+                    </div>
+
+                </section>
+
+                <aside class="coluna-direita">
+                    <section class="cartao arredondado">
+                        <h2>Sobre a instituição</h2>
+                        <div class="imagem-instituicao">
+                            <img src="img/asilo_sao_jose.webp" alt="Asilo São José" class="arredondado">
+                        </div>
+                        <div class="info-item">
+                            <span class="negrito">Asilo São José</span>
+                            <p>Rua das Flores, 123</p>
+                            <p>São Paulo - SP</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="negrito">Horário de funcionamento</p>
+                            <p>Seg a Sex: 08h às 17h</p>
+                            <p>Sábado: 08h às 12h</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="negrito">Contato</p>
+                            <p>(11) 99999-9999</p>
+                            <a href="https://wa.me/+5599999999999?text=Ol%C3%A1,%20seja%20bem%20vindo%20ao%20Whatsapp!"
+                                target="_blank" class="whatsapp-link arredondado">
+                                <img src="img/whatsapp-logo.svg" alt="WhatsApp"> WhatsApp
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="cartao importante arredondado">
+                        <h2>Importante</h2>
+                        <p>A ONG analisará a rota e entrará em contato para confirmar a retirada.</p>
+                    </section>
+
+                    <p class="mensagem-seguranca">Seus dados estão seguros e serão usados apenas para esta solicitação.
+                    </p>
+                </aside>
+            </div>
+
+
+        </form>
+    </section>
+
+    <!-- **************************** -->
+    <!-- ********** RODAPE ********** -->
+    <!-- **************************** -->
+    
+    <footer>
+
+
+        <div class="icone-rodape">
+            <img src="img/logo.png" alt="Imagem com a logo do site Mapa Solidário." class="logo-mapa-solidario">
+        </div>
+
+        <div class="links-uteis">
+            <span>Links Úteis</span>
+            <nav>
+                <ul>
+                    <li><a href="como_funciona.html">Sobre o Projeto</a></li>
+                    <li><a href="como_funciona.html#duvidas_frequentes">Dúvidas Frequentes</a></li>
+                    <li><a href="como_funciona.html">Políticas de Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="fale-conosco">
+            <span>Fale Conosco</span>
+            <P>contato@mapasolidario.com.br</P>
+            <nav>
+                <ul class="redes-sociais">
+                    <li><a href="http://instagram.com/senacrs/" target="_blank"><img src="img/instagram-logo.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.facebook.com/senacrsoficial" target="_blank"><img src="img/facebook-logo.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://wa.me/555189142670" target="_blank"><img src="img/whatsapp-logo.svg" alt="logo whatsapp"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+    <!-- **************************** -->
+    <!-- ********** RODAPE ********** -->
+    <!-- **************************** -->
+</body>
+
+</html>

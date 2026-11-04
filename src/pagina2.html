@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Solidário - Buscar Locais</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+
+    <!-- **************************** -->
+    <!-- ********* CABEÇALHO ******** -->
+    <!-- **************************** -->
+
+    <header>
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Imagem com a logo do site Mapa Solidário." class="logo-mapa-solidario">
+        </a>
+
+        <div class="itens">
+        
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="como_funciona.html">Como Funciona</a></li>
+                    <li><a href="pagina2.html">Mapa</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="minhas_solicitacoes.html">Minhas Solicitações</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="entrar">
+                <a href="pagina7.html">Entrar</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- **************************** -->
+    <!-- ********* CABEÇALHO ******** -->
+    <!-- **************************** -->
+
+    <div id="principal">
+        <!-- Cabeçalho de busca -->
+        <div class="topo-busca">
+            <h1>Buscar Locais</h1>
+            <form action="buscar.html" method="GET" class="form-busca">
+                <div class="grupo-central">
+                    <input type="text" id="cepInput" placeholder="Digite seu CEP" class="cep-input">
+                    <input type="submit" value="Buscar" class="botao-buscar">
+                </div>
+
+                <div class="grupo-direita">
+                    <button type="button" class="botao-filtros">Filtros</button>
+                    <button type="button" class="botao-cadastrar">Cadastrar ONG</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="corpo">
+            <div class="filtros">
+                <div class="cabecalho-filtros">
+                    <h2>Filtros avançados</h2>
+                </div>
+                <span class="qtde-locais">14 locais encontrados na sua região</span>
+
+                <form action="#" method="get" class="form-filtros">
+                    <div class="reset-wrapper">
+                        <input type="reset" value="Limpar todos" class="limpar-todos">
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Raio de distância</h3>
+                        <input type="range" min="0" max="30" value="15" id="raio"
+                            oninput="valorRaio.textContent = raio.value">
+                        <div class="range-valores">
+                            <span>0 km</span>
+                            <span id="valorRaio">15</span>
+                            <span>30 km</span>
+                        </div>
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Categorias</h3>
+                        <input type="checkbox" id="roupas" value="roupas">
+                        <label for="roupas">Roupas</label><br>
+                        <input type="checkbox" id="alimentos" value="alimentos">
+                        <label for="alimentos">Alimentos</label><br>
+                        <input type="checkbox" id="brinquedos" value="brinquedos">
+                        <label for="brinquedos">Brinquedos</label><br>
+                        <input type="checkbox" id="moveis" value="moveis">
+                        <label for="moveis">Móveis</label><br>
+                        <input type="checkbox" id="outros" value="outros">
+                        <label for="outros">Outros</label>
+                    </div>
+
+                    <div class="grupo">
+                        <h3>Como deseja doar?</h3>
+                        <input type="radio" name="doar" id="levar" value="levar">
+                        <label for="levar">Levar ao local</label><br>
+                        <input type="radio" name="doar" id="retirada" value="retirada">
+                        <label for="retirada">Retirada em casa</label>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="checkbox" id="esconder" value="esconder">
+                        <label for="esconder">Esconder locais com galpões lotados</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="resultados">
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.335919177741!2d-51.226296!3d-30.035242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197906a9d397f5%3A0x514b4935e97fbf4d!2sUniSenac%20-%20Campus%20Porto%20Alegre%20I!5e0!3m2!1spt-BR!2sbr!4v172027367873!5m2!1spt-BR!2sbr"
+                        class="mapa-frame" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                </div>
+
+                <div class="lista">
+
+                    <div class="item">
+                        <img src="img/casa_menino_jesus.jpg" alt="Foto da Casa Menino Jesus de Praga" class="img-local">
+                        <div class="info-local">
+                            <h3>Casa Menino Jesus de Praga</h3>
+                            <p>2,3 km de você</p>
+                            <a href="pagina3.html" class="botao-ver-perfil">Ver perfil completo</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/ongEsperanca.jpg" alt="Foto do local" class="img-local">
+                        <div class="info-local">
+                            <h3>Instituto Esperança</h3>
+                            <p>3,7 km de você</p>
+                            <a href="#" class="botao-ver-perfil">Ver perfil completo</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/vidaNova.jpg" alt="Foto do local" class="img-local">
+                        <div class="info-local">
+                            <h3>Projeto Vida Nova</h3>
+                            <p>4,1 km de você</p>
+                            <a href="#" class="botao-ver-perfil">Ver perfil completo</a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/coracaoFeliz.jpg" alt="Foto do local" class="img-local">
+                        <div class="info-local">
+                            <h3>Lar do Coração Feliz</h3>
+                            <p>5,8 km de você</p>
+                            <a href="#" class="botao-ver-perfil">Ver perfil completo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- **************************** -->
+    <!-- ********** RODAPE ********** -->
+    <!-- **************************** -->
+    
+    <footer>
+
+
+        <div class="icone-rodape">
+            <img src="img/logo.png" alt="Imagem com a logo do site Mapa Solidário." class="logo-mapa-solidario">
+        </div>
+
+        <div class="links-uteis">
+            <span>Links Úteis</span>
+            <nav>
+                <ul>
+                    <li><a href="como_funciona.html">Sobre o Projeto</a></li>
+                    <li><a href="como_funciona.html#duvidas_frequentes">Dúvidas Frequentes</a></li>
+                    <li><a href="como_funciona.html">Políticas de Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="fale-conosco">
+            <span>Fale Conosco</span>
+            <P>contato@mapasolidario.com.br</P>
+            <nav>
+                <ul class="redes-sociais">
+                    <li><a href="http://instagram.com/senacrs/" target="_blank"><img src="img/instagram-logo.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.facebook.com/senacrsoficial" target="_blank"><img src="img/facebook-logo.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://wa.me/555189142670" target="_blank"><img src="img/whatsapp-logo.svg" alt="logo whatsapp"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+    <!-- **************************** -->
+    <!-- ********** RODAPE ********** -->
+    <!-- **************************** -->
+</body>
+
+</html>

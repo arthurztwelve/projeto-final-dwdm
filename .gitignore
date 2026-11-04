@@ -1,0 +1,25 @@
+# ===== Dependências (caso o projeto passe a usar npm no futuro) =====
+node_modules/
+
+# ===== Segredos: NUNCA subir para o GitHub =====
+.env
+.env.*
+
+# ===== Builds / pastas geradas =====
+dist/
+build/
+
+# ===== Configurações pessoais de IDE =====
+# (cada colega pode ter porta, tema e extensões diferentes)
+.vscode/
+.idea/
+
+# ===== Lixo do sistema operacional =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Arquivos temporários e logs =====
+*.log
+*.tmp
+*.bak

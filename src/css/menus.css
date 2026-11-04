@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    padding: 0 150px;
+    font-family: "Arimo", sans-serif;
+    text-align: justify;
+}
+
+.logo{
+    display: inline-block;
+    height: 100px;
+    vertical-align: middle;
+}
+
+
+header::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.logo-mapa-solidario {
+    height: 100%;
+}
+
+.itens {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.menu,
+.entrar {
+    display: inline-block;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.menu ul li {    
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.menu ul li a:link,
+.menu ul li a:visited {
+    color: #035034;
+    font-weight: 800;
+    font-size: 20px;
+    word-spacing: 2px;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul li a:hover {
+    border-bottom: 2px solid #035034;
+}
+
+.entrar {
+    padding: 15px 40px;
+    background-color: #035034;
+    border-radius: 26px;
+}
+
+.entrar a:link,
+.entrar a:visited {
+
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.entrar a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
+
+
+
+footer {
+    background-color: #035034;
+    height: 200px;
+    padding: 0 50px;
+    font-family:  "Arimo", sans-serif;
+    color: #fff;
+}
+
+span {
+    font-size: 18px;
+}
+
+.icone-rodape {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.icone-rodape img {
+    width: 250px;
+}
+
+.links-uteis span, .fale-conosco span {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.links-uteis {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left:30%;    
+}
+
+.links-uteis ul {
+    list-style-type: none;
+    margin-top: 18px;
+}
+
+.links-uteis ul li {
+    margin: 3px 0;
+}
+
+.links-uteis ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fale-conosco{
+    float: right;
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+.fale-conosco p {
+    margin: 18px 0;
+}
+
+.fale-conosco ul {
+    list-style-type: none;
+}
+
+.fale-conosco ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fale-conosco ul li a img {
+    height: 30px;
+}
+

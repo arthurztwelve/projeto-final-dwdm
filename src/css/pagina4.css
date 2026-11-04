@@ -1,0 +1,303 @@
+/* Área principal do dashboard */
+#dashboard {
+    display: flex;
+    font-family: "Arimo", sans-serif;
+}
+
+/* Menu lateral do painel administrativo */
+.menu-lateral {
+    float: left;
+    /* Posiciona o menu à esquerda */
+    width: 20%;
+    background-color: #035034;
+    padding: 20px;
+    min-height: 100px;
+    /* Mantém uma altura mínima para o menu */
+    box-sizing: border-box;
+    /* Inclui o padding dentro da largura definida */
+}
+
+/* Título do menu lateral */
+.menu-lateral h2 {
+    color: white;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Remove os marcadores da lista */
+.menu-lateral ul {
+    list-style: none;
+}
+
+/* Espaçamento entre os itens do menu */
+.menu-lateral ul li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Estilo dos links do menu */
+.menu-lateral ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+/* Área principal onde ficam os cards e informações */
+.conteudo {
+    float: right;
+    /* Posiciona o conteúdo ao lado do menu */
+    width: 77%;
+    margin-left: 1%;
+    /* Espaçamento entre o menu e o conteúdo */
+    box-sizing: border-box;
+    /* Mantém a largura correta mesmo com padding */
+}
+
+/* Título principal da página */
+.conteudo h1 {
+    color: #035034;
+    margin: 25px 0;
+}
+
+/* Organiza os cards superiores */
+.cards-topo {
+    display: flex;
+    /* Organiza os cards em linha */
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem para a linha de baixo */
+    justify-content: space-between;
+    /* Distribui os cards com espaço entre eles */
+    gap: 20px;
+    /* Define o espaçamento entre os cards */
+    margin-bottom: 20px;
+}
+
+/* Cor dos títulos dos cards */
+.cards-topo h3 {
+    color: #035034;
+    font-weight: bold;
+}
+
+/* Card com informações resumidas */
+.card-info {
+    width: 48%;
+    /* Faz dois cards ocuparem uma mesma linha */
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Inclui padding e borda dentro da largura */
+    border-radius: 8px;
+    /* Arredonda os cantos */
+}
+
+/* Título do card */
+.card-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Valor principal exibido no card */
+.card-info span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Bloco de conteúdo da esquerda */
+.bloco-esquerda {
+    float: left;
+    width: 48%;
+}
+
+/* Bloco de conteúdo da direita */
+.bloco-direita {
+    float: right;
+    width: 48%;
+}
+
+/* Configuração geral dos cards */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Título de cada card */
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #035034;
+}
+
+/* Espaçamento entre os textos */
+.card ul {
+    list-style: none;
+    /* Remove os marcadores da lista */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    /* Espaçamento entre os itens da lista */
+    font-size: 16px;
+}
+
+/* Fundo da barra de progresso */
+.barra {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Parte preenchida da barra */
+.progresso {
+    height: 100%;
+    background: #035034;
+    border-radius: 10px;
+}
+
+/* Define a largura da barra correspondente à categoria Roupas */
+.progresso-roupas {
+    width: 85%;
+}
+
+/* Define a largura da barra correspondente à categoria Alimentos */
+.progresso-alimentos {
+    width: 60%;
+}
+
+/* Define a largura da barra correspondente à categoria Brinquedos */
+.progresso-brinquedos {
+    width: 40%;
+}
+
+/* Define a largura da barra correspondente à categoria Móveis */
+.progresso-moveis {
+    width: 20%;
+}
+
+/* Área do gráfico */
+.grafico-pizza {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Gráfico */
+.pizza {
+
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+    background:
+        conic-gradient(#035034 0% 60%,
+            #4CAF50 60% 80%,
+            #8BC34A 80% 95%,
+            #C8E6C9 95% 100%);
+}
+
+/* Legenda do gráfico de pizza */
+.legenda-pizza {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Organiza cada item da legenda com o quadrado colorido ao lado do texto */
+.legenda-pizza li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Quadradinhos coloridos da legenda */
+.cor {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Cor utilizada para representar Roupas na legenda */
+.pizza-roupas {
+    background: #035034;
+}
+
+/* Cor utilizada para representar Alimentos na legenda */
+.pizza-alimentos {
+    background: #4CAF50;
+}
+
+/* Cor utilizada para representar Higiene na legenda */
+.pizza-higiene {
+    background: #8BC34A;
+}
+
+/* Cor utilizada para representar Brinquedos na legenda */
+.pizza-brinquedos {
+    background: #C8E6C9;
+}
+
+/* Área do gráfico de colunas */
+.grafico-colunas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 220px;
+}
+
+/* Organiza cada coluna do gráfico e seu respectivo mês */
+.coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+}
+
+/* Formata visualmente cada coluna do gráfico */
+.valor {
+    width: 45px;
+    background: #035034;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Define a altura da coluna referente ao mês de abril */
+.valor-abril {
+    height: 40%;
+}
+
+/* Define a altura da coluna referente ao mês de maio */
+.valor-maio {
+    height: 65%;
+}
+
+/* Define a altura da coluna referente ao mês de junho */
+.valor-junho {
+    height: 90%;
+}
+
+/* Define a altura da coluna referente ao mês de julho */
+.valor-julho {
+    height: 70%;
+}
+
+/* Formata o nome de cada mês abaixo da coluna */
+.coluna p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Limpa os elementos posicionados com float */
+.clearfix {
+    clear: both;
+}

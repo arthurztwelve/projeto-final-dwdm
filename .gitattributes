@@ -1,0 +1,13 @@
+# Normaliza o fim de linha (os arquivos atuais estão em CRLF, padrão do Windows).
+# Evita que o Git mostre o arquivo inteiro como "alterado" quando alguém usa Mac/Linux.
+* text=auto
+
+# Imagens e fontes são binárias: o Git não deve tentar mexer no conteúdo
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.woff binary
+*.woff2 binary

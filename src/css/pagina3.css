@@ -1,0 +1,338 @@
+/* Define a cor de fundo da página e a fonte padrão utilizada */
+body {
+    background-color: #f7f8f5;
+    font-family: "Arimo", sans-serif;
+}
+
+/* Define a largura da área principal e centraliza o conteúdo */
+#perfil {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+/* Espaçamento e cor do caminho de navegação (breadcrumb) */
+.breadcrumb {
+    margin-bottom: 20px;
+    color: gray;
+}
+
+/* Evita problemas com elementos em float dentro da div */
+.topo {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+/* Card principal com as informações da instituição */
+.card-instituicao {
+    width: 100%;
+    height: 225px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Posiciona a logo da instituição à esquerda */
+.foto-local {
+    float: left;
+    width: 120px;
+}
+
+/* Define o tamanho da imagem da instituição */
+.foto-local img {
+    width: 180px;
+}
+
+/* Posiciona os dados da instituição ao lado da imagem */
+.dados-local {
+    float: right;
+    width: 70%;
+    margin-top: 3%;
+}
+
+/* Estilo do nome da instituição */
+.dados-local h1 {
+    margin-bottom: 15px;
+    color: #035034;
+}
+
+/* Espaçamento entre as linhas do endereço */
+.dados-local p {
+    margin-bottom: 5px;
+}
+
+/* Faz o link aceitar margem superior */
+.dados-local a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Aparência padrão do link */
+.dados-local a:link,
+.dados-local a:visited {
+
+    color: #035034;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+/* Destaca o link quando o mouse passa sobre ele */
+.dados-local a:hover {
+    color: #035034;
+    text-decoration: none;
+    border-bottom: 2px solid #035034;
+}
+
+/* Área principal do conteúdo da página */
+.conteudo-esquerda {
+    float: left;
+    width: 68%;
+}
+
+/* Configurações em comum para todos os cards */
+.card-instituicao,
+.status-lotacao,
+.card-doacao,
+.horarios {
+    width: 100%;
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura */
+    margin-bottom: 0px;
+    border-radius: 10px;
+}
+
+/* Card lateral com as opções de doação */
+.acoes {
+    float: right;
+    width: 28%;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Título da área de ações */
+.acoes h2 {
+    font-size: 22px;
+    color: #035034;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+/* Espaçamento entre os botões */
+.botao-acao,
+.botao-whats {
+    margin-bottom: 15px;
+}
+
+/* Remove o espaço do último botão */
+.botao-acao:last-child,
+.botao-whats:last-child {
+    margin-bottom: 0;
+}
+
+/* Configuração geral dos botões */
+.botao-acao a,
+.botao-whats a {
+
+    display: flex;
+
+    /* Centraliza o texto no botão */
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+
+    height: 66px;
+    box-sizing: border-box;
+}
+
+/* Botões verdes */
+.botao-acao a {
+    background-color: #035034;
+    color: white;
+}
+
+/* Efeito ao passar o mouse */
+.botao-acao a:hover {
+    background-color: #014029;
+}
+
+/* Botão do WhatsApp com estilo diferente */
+.botao-whats a {
+    background-color: white;
+    color: #035034;
+    border: 2px solid #014029;
+}
+
+/* Inverte as cores ao passar o mouse */
+.botao-whats a:hover {
+    background-color: #035034;
+    color: white;
+}
+
+/* Card que mostra o status das doações */
+.status-lotacao {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 25px 0;
+    overflow: hidden; /* Evita problemas com os elementos em float */
+}
+
+/* Área do texto do status */
+.texto-status {
+    float: left;
+    width: 70%;
+}
+
+/* Título da seção */
+.texto-status h2 {
+    color: #035034;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+/* Destaque para a mensagem principal */
+.status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #035034;
+    margin-bottom: 15px;
+}
+
+/* Fundo da barra de progresso */
+.barra {
+    width: 100%;
+    height: 14px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+/* Parte preenchida da barra */
+.progresso {
+    width: 85%;
+    height: 100%;
+    background: #035034;
+    border-radius: 10px;
+}
+
+/* Círculo que mostra a porcentagem */
+.circulo {
+    float: right;
+
+    width: 120px;
+    height: 120px;
+
+    border: 10px solid #035034;
+    border-radius: 50%;
+
+    display: flex;
+
+    /* Centraliza a porcentagem */
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #035034;
+}
+
+/* Organiza os dois cards lado a lado */
+.doacoes {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Card das listas de doações */
+.card-doacao {
+    flex: 1; /* Faz os dois ocuparem o mesmo espaço */
+    border: 1px solid #ddd;
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.card-doacao:first-child {
+    margin-right: 0;
+}
+
+/* Título do card */
+.card-doacao h2 {
+
+    margin-bottom: 5px;
+    font-size: 22px;
+
+    display: flex;
+
+    /* Alinha o ícone e o texto */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tamanho do ícone do título */
+.card-doacao h2 img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Recuo da lista */
+.card-doacao ul {
+    margin-left: 20px;
+}
+
+/* Espaçamento entre os itens */
+.card-doacao li {
+    margin-bottom: 8px;
+}
+
+/* Card dos horários de funcionamento */
+.horarios {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    clear: both; /* Impede que os floats interfiram */
+}
+
+/* Espaço abaixo do título */
+.horarios h2 {
+    margin-bottom: 15px;
+}
+
+/* Faz a tabela ocupar toda a largura */
+table {
+    width: 100%;
+}
+
+/* Destaca o texto "Fechado" */
+table span {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Espaçamento das células */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alinha os horários à direita */
+td:last-child {
+    text-align: right;
+}
+
+/* Limpa os floats da página */
+.clearfix {
+    clear: both;
+}
